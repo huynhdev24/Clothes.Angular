@@ -17,7 +17,7 @@ export default class HomeComponent extends Unsubscriber implements OnInit {
   product$!:Observable<Product>;
   selectedVariant: string | undefined;
 
-  constructor(privateService: ProductService, private route: ActivatedRoute, private router: Router) {
+  constructor(private privateService: ProductService, private route: ActivatedRoute, private router: Router) {
     super()
   }
 

@@ -4,13 +4,13 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-products',
+  selector: 'app-product-item',
   standalone: true,
   imports: [RouterModule, CommonModule],
   templateUrl: './product-item.component.html',
   styleUrls: ['./product-item.component.css']
 })
-export class ProductsComponent {
+export class ProductItemComponent {
   @Input() product!: Product;
 
   constructor() {}
