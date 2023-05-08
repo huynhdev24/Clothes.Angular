@@ -5,13 +5,13 @@ import {BehaviorSubject, combineLatestWith, map, Observable, switchMap} from "rx
 import { ProductService } from 'src/app/core/services/product.service';
 import { ProductItemComponent } from './components/product-item/product-item.component';
 import { productsPageSize } from 'src/environments/environment';
-import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import {SortProductsPipe} from "../../core/pipes/sort-products-pipe";
 
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [RouterModule, CommonModule],
+  imports: [ProductItemComponent, CommonModule, SortProductsPipe],
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
