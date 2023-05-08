@@ -6,10 +6,10 @@ import { RouterModule } from "@angular/router";
   selector: 'app-landing-banner-component',
   imports: [CommonModule, RouterModule],
   standalone: true,
-  templateUrl: './landing-banner-component.component.html',
-  styleUrls: ['./landing-banner-component.component.css']
+  templateUrl: './landing-banner.component.html',
+  styleUrls: ['./landing-banner.component.css']
 })
-export class LandingBannerComponentComponent {
+export class LandingBannerComponent {
 
   constructor() { }
 

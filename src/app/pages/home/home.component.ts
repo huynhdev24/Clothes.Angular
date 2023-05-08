@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from "@angular/common";
-import { LandingBannerComponentComponent } from "./components/landing-banner-component/landing-banner-component.component";
-import { FeaturedProductListComponentComponent } from "./components/featured-product-list-component/featured-product-list-component.component";
+import { LandingBannerComponent } from "./components/landing-banner/landing-banner.component";
+import { FeaturedProductListComponent } from "./components/featured-product-list/featured-product-list.component";
 
 @Component({
   standalone: true,
   imports: [
     CommonModule,
-    LandingBannerComponentComponent,
-    FeaturedProductListComponentComponent
+    LandingBannerComponent,
+    FeaturedProductListComponent
   ],
   selector: 'app-home',
   templateUrl: './home.component.html',
