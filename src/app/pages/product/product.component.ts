@@ -14,10 +14,10 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent extends Unsubscriber implements OnInit {
-  product$!:Observable<Product>;
+  product$!: Observable<Product>;
   selectedVariant: string | undefined;
 
-  constructor(private privateService: ProductService, private route: ActivatedRoute, private router: Router) {
+  constructor(private productService: ProductService, private route: ActivatedRoute, private router: Router) {
     super()
   }
 
