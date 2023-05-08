@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.css']
 })
-export default class HomeComponent extends Unsubscriber implements OnInit {
+export class ProductComponent extends Unsubscriber implements OnInit {
   product$!:Observable<Product>;
   selectedVariant: string | undefined;
 
