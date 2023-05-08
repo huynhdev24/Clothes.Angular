@@ -3,7 +3,7 @@ import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
 
 @Component({
-  selector: 'app-landing-banner-component',
+  selector: 'app-landing-banner',
   imports: [CommonModule, RouterModule],
   standalone: true,
   templateUrl: './landing-banner.component.html',
